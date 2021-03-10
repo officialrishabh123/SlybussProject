@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .main {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        
+        .main .inner-div {
+            width: 80%;
+            min-height: 100vh;
+            /* padding: 0px 20px; */
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .main .inner-div .col-1 {
+            padding: 5px;
+            /* height: 50px; */
+            background: #fff;
+            align-items: center;
+            padding: 20px 20px;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        
+        .main .inner-div header {
+            background: chocolate;
+            padding: 20px;
+        }
+        
+        .main .inner-div header ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        
+        .main .inner-div header ul li {
+            padding: 3px 7px;
+        }
+        
+        .main .inner-div header ul li:hover {
+            border-bottom: 2px solid white;
+            font-size: 22px;
+        }
+        
+        .main .inner-div header ul li a {
+            text-decoration: none;
+            color: white;
+            /* font-weight: 700; */
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        /* ------------------ DIV-3-------------- */
+        
+        .main .inner-div .col-3 .container {
+            padding: 30px;
+        }
+        
+        .main .inner-div .col-3 .container #contain {
+            background-color: yellow;
+            margin: 12px 8px;
+            padding: 5px;
+            font-size: 20px;
+            width: 100%;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text {
+            list-style: none;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li a,
+        i {
+            color: red;
+            text-decoration: none;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li i:nth-child(1) {
+            display: none;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li:hover a {
+            color: chocolate;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li:hover i:nth-child(2) {
+            display: none;
+            color: brown;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .text li:hover i:nth-child(1) {
+            display: flex;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .down-arrow ul {
+            list-style: none;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .down-arrow ul li {
+            padding-top: 8px;
+            font-size: 23px;
+            /* margin: 7px */
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .down-arrow ul li:hover {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .down-arrow ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            /* padding: 5px; */
+        }
+        
+        .main .inner-div .col-3 .container #contain ul .down-arrow {
+            display: none;
+        }
+        
+        .main .inner-div .col-3 .container #contain ul:hover .down-arrow {
+            display: block;
+            /* background: red; */
+            margin-top: 10px;
+            padding: 5px;
+        }
+        /* ----------------- FOOTER----------------- */
+        
+        .footer {
+            position: absolute;
+            background: black;
+            height: 20px;
+            width: 80%;
+            bottom: 0px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inner-div">
+            <div class="col-1">
+                <div class="left-div">
+                    Meterial
+                </div>
+
+            </div>
+            <header>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="col-3">
+                <div class="container">
+                    <h1>Subjects</h1>
+                    <div class="row-1" id="contain">
+
+                        <ul>
+                            <div class="text">
+                                <li>
+                                    <a href="#">DAA</a>
+
+                                    <div class="arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+
+                                    </div>
+
+                                </li>
+                            </div>
+
+                            <div class="down-arrow">
+                                <hr>
+                                <ul>
+
+                                    <li>
+                                        <a href="./DAA files/IT.DAA.COURSE-OVERVIEW.html">Course overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="./DAA files/IT.DAA.UNIT-1.html">unit-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="row-2" id="contain">
+                        <ul>
+                            <div class="text">
+                                <li>
+                                    <a href="#">CG</a>
+
+                                    <div class="arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+
+                                    </div>
+
+                                </li>
+                            </div>
+
+                            <div class="down-arrow">
+                                <hr>
+                                <ul>
+                                    <li>
+                                        <a href="CG/IT-CG-UNIT-1.html">unit-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./CG/IT-CG-UNIT-2.html">unit-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./CG/IT-CG-UNIT-3.HTML">unit-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="./CG/IT-CG-UNIT-4.HTML">unit-4</a>
+                                    </li>
+                                    <li>
+                                        <a href="./CG/IT-CG-UNIT-5.HTML">unit-4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="row-3" id="contain">
+                        <ul>
+                            <div class="text">
+                                <li>
+                                    <a href="#">WT</a>
+
+                                    <div class="arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+
+                                    </div>
+
+                                </li>
+                            </div>
+
+                            <div class="down-arrow">
+                                <hr>
+                                <ul>
+                                    <li>
+                                        <a href="#">unit-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="row-4" id="contain">
+                        <ul>
+                            <div class="text">
+                                <li>
+                                    <a href="#">DBMS</a>
+
+                                    <div class="arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+
+                                    </div>
+
+                                </li>
+                            </div>
+
+                            <div class="down-arrow">
+                                <hr>
+                                <ul>
+                                    <li>
+                                        <a href="#">unit-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="row-5" id="contain">
+                        <ul>
+                            <div class="text">
+                                <li>
+                                    <a href="#">HCI</a>
+
+                                    <div class="arrow">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+
+                                    </div>
+
+                                </li>
+                            </div>
+
+                            <div class="down-arrow">
+                                <hr>
+                                <ul>
+                                    <li>
+                                        <a href="#">unit-1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">unit-4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
